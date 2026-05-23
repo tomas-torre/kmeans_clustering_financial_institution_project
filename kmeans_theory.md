@@ -77,7 +77,12 @@ $$\arg\min_{k} \sum_{j=1}^p (x_{ij} - \mu_{kj})^2$$
 ### The Relationship between the Math and the Algorithm
 The math notation and the algorithm are actually two sides of the same coin. The algorithm is just an iterative strategy to minimize the mathematical formula . 
 
-Mathematically, the objective function can be rewritten using the cluster centroids ($\mu_k$):$$\sum_{k=1}^K \frac{1}{|C_k|} \sum_{i, i' \in C_k} \sum_{j=1}^p (x_{ij} - x_{i'j})^2 = 2 \sum_{k=1}^K \sum_{i \in C_k} \sum_{j=1}^p (x_{ij} - \mu_{kj})^2$$The algorithm minimizes this exact formula by alternating between two mathematical steps: 
+Mathematically, the objective function can be rewritten using the cluster centroids ($\mu_k$):
+
+$$\sum_{k=1}^K \frac{1}{|C_k|} \sum_{i, i' \in C_k} \sum_{j=1}^p (x_{ij} - x_{i'j})^2 = 2 \sum_{k=1}^K \sum_{i \in C_k} \sum_{j=1}^p (x_{ij} - \mu_{kj})^2$$
+
+The algorithm minimizes this exact formula by alternating between two mathematical steps:
+
 1. Step 1 (Fix Assignments, Minimize for Centroids): When computing the mean ($\mu_k$), you are finding the exact mathematical point that minimizes the sum of squared distances for that specific group.
 2. Step 2 (Fix Centroids, Minimize for Assignments): When reassigning observations to the closest centroid, you are decreasing the total sum of distances across the entire system.
 
