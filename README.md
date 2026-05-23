@@ -155,7 +155,7 @@ Transforma os centróides novamente em estatísticas de mercado compreensíveis,
 * **Cluster 2: Ativos com Preço Errado:** Perfil perigoso caracterizado por margens de risco subvalorizadas com graves atrasos nos pagamentos.
 * **Cluster 3: Operações Estruturadas / Risco Controlado:** Alta eficiência marginal com sólidas tendências de recuperação pós-inadimplência.
 
-## Pilha Técnica
+## Ferramentas
 * **Linguagem:** Python, SQL
 * **Driver / Mecanismo de Banco de Dados:** SQLAlchemy (`create_engine`), dialeto de backend PostgreSQL
 * **Aprendizado de máquina e estatística:** Scikit-Learn (`KMeans`, `StandardScaler`, `silhouette_score`)
