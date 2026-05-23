@@ -47,7 +47,7 @@ $$W(C_k) = \frac{1}{|C_k|} \sum_{i, i' \in C_k} \sum_{j=1}^p (x_{ij} - x_{i'j})^
 
 Here, $|C_k|$ denotes the number of observations in cluster $k$, and $p$ represents the number of features (dimensions). Combining these yields the complete objective function:
 
-$$\min_{C_1, \dots, C_K} \left\{ \sum_{k=1}^K \frac{1}{|C_k|} \sum_{i, i' \in C_k} \sum_{j=1}^p (x_{ij} - x_{i'j})^2 \right\}$$
+$$\min_{C_1, \dots, C_K} \left[ \sum_{k=1}^K \frac{1}{|C_k|} \sum_{i, i' \in C_k} \sum_{j=1}^p (x_{ij} - x_{i'j})^2 \right]$$
 
 
 
